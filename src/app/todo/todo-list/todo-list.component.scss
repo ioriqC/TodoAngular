@@ -1,0 +1,26 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    .item {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding: 5px;
+    
+    
+    
+    &__title {
+        font-weight: bold;
+        margin-right: 20px;
+        
+        &.active {
+            color: red;
+        }
+      
+    }
+    &__description {
+        text-decoration: dotted;
+    }
+    }
+}

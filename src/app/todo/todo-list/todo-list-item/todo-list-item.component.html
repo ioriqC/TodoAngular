@@ -1,0 +1,12 @@
+
+    <span class="todo-list-item__title">Title: {{ todo.title }}</span>
+    <span class="todo-list-item__description">Description: {{ todo.description }}</span>
+
+    <button (click)="showEdit()"> Edit</button>
+    <button (click)="delTodo.emit(todo)"> Delete</button>
+
+    <form *ngIf=isEdit>
+       <input class="form-control" name="title" [(ngModel)]="todo.title" (change)="editTodo()">
+       <input class="form-control" name="description" [(ngModel)]="todo.description" (change)="editTodo()">
+        
+    </form>
