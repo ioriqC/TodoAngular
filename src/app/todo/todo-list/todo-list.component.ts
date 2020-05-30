@@ -31,14 +31,7 @@ export class TodoListComponent {
         }
     }
 
-    editItemTodo({title, description}: Todo): void {
-        const itemTodo = this.todos.some((todo: Todo) =>{
-            return (title !== todo.title) && (description !== todo.description);
-          });
-          if(!itemTodo) {
-            this.todos.push({ title, description });
-          }
-    }
+    
    
 
 }
